@@ -1,0 +1,9 @@
+{
+	"applications": {},
+	"bootstrapPlugins": {
+		"UIPLuginDemo": {
+			"component": "com.sap.rig.demo",
+			"url": "../../../../../"
+		}
+	}
+}
