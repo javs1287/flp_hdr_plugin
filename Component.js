@@ -28,18 +28,23 @@ sap.ui.define([
 			var text2 = "Welcome, " + uname;
 			
 			//Get cookie context
-			var qk = document.cookie.split("sap-usercontext=");
-			var qk1 = qk[1].split(";");
-			var qk2 = qk1[0].split("&");
+			var qk = document.cookie.split(";");
+			//console.log(qk);
+			//var qk1 = qk[0].split("sap-usercontext=");
+			//console.log(qk1);
+			var qk2 = qk[0].split("&");
+			//console.log(qk2);
 			var qk3 = qk2[1].split("sap-client=");
+			//console.log(qk3);
 			var clnt = qk3[1].toString();
+			//console.log(clnt);
 			var text3 = "Client: " + clnt;
 			
 			//Get client and username;
 			var text4 = text3 + " | " + uname;
 			
 			rendererPromise.then(function (oRenderer) {
-				oRenderer.setHeaderTitle(text4);
+				oRenderer.setHeaderTitle(text3);
 			});
 
 			/**
