@@ -4,7 +4,7 @@
     "description": "Grunt build",
     "private": true,
     "devDependencies": {
-        "@sap/grunt-sapui5-bestpractice-build": "1.3.65",
+        "@sap/grunt-sapui5-bestpractice-build": "1.4.15",
         "vscode-uri": "1.0.6"
     }
 }
